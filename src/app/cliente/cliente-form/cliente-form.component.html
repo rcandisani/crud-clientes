@@ -1,0 +1,10 @@
+<po-page-default [p-title]="isEdit ? 'Editar Cliente' : 'Novo Cliente'">
+<po-dynamic-form 
+  [p-fields]="fields" 
+  [p-value]="cliente"
+  (p-valueChange)="onFormChange($event)">
+</po-dynamic-form>
+
+
+  <po-button p-label="Salvar" (p-click)="salvar()"></po-button>
+</po-page-default>
